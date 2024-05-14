@@ -10,7 +10,6 @@ public class SomaPares {
 
     public static void main(String[] args) {
         SomaPares somaPares = new SomaPares();
-        somaPares.numeros.
         int soma = somaPares.numeros.stream()
                 .filter(num -> num % 2 == 0)
                 .mapToInt(num -> num)
