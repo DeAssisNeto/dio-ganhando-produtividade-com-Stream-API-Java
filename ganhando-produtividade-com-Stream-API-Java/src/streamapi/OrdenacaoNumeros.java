@@ -16,7 +16,8 @@ public class OrdenacaoNumeros {
 
     public static void main(String[] args) {
         OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
-        System.out.println(ordenacaoNumeros.numeros.stream().sorted().toList());
+        var numerosOrdenados = ordenacaoNumeros.numeros.stream().sorted().toList();
+        System.out.println(numerosOrdenados);
 
     }
 
