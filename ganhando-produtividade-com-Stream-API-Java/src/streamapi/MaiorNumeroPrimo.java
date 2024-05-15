@@ -21,7 +21,7 @@ public class MaiorNumeroPrimo {
 
         int maiorNumero = maiorNumeroPrimo.numeros.stream()
                 .filter(num -> num == 2 || num % 2 != 0 && num != 1)
-                .filter(num -> (num == 3 || num % 3 != 0) && (num == 5 || num % 5 != 0) && (num == 7 || num % 7 != 0))
+                .filter(num -> (num == 3 || num % 3 != 0) && (num == 5 || num % 5 != 0))
                 .max(Comparator.naturalOrder())
                 .get();
 
